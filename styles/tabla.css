@@ -1,0 +1,17 @@
+.divTable.unstyledTable .divTableCell, .divTable.unstyledTable .divTableHead {
+  border: 0px solid #AAAAAA;
+  padding: 0px 10px;
+}
+
+
+
+.divTable.unstyledTable .divTableCell, .divTable.unstyledTable .divTableHead {
+}
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}

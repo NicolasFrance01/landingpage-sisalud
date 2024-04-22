@@ -1,0 +1,79 @@
+
+body {
+    background-image: url(../images/bg_pattern.png), url(../images/fondo.jpg);
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    margin:0 auto;
+}
+
+
+
+    .logo {
+        margin: 15vh auto;   
+    }
+
+    input[type="button"] {
+            padding: .8em 2em;
+            font-size: 1.3em;
+            border: 5;
+            border-radius: 5px;
+            background: #F47E40;
+            color: #fff;
+            /*border-color: #fff;*/
+            font-weight:600;
+    }
+        
+    input#FilterHospital , select#SelectRol {
+            /* height: 40px; */
+            font-size: 1.2em;
+            padding: 1em;
+
+    }
+
+         
+
+
+    
+    .cba {
+        display: block;
+        background: url(../images/logo-cba.png);
+        background-size: 150px;
+        width: 99.1%;
+        height: 100px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0;
+    }
+
+
+@media (max-width:768px) {
+
+    body {height:100vh;}
+
+
+    .divTable,
+.divTableRow ,
+.divTableHeading ,
+.divTableCell, .divTableHead 
+.divTableHeading,
+.divTableFoot ,
+.divTableBody { display: block; }
+
+.logo img{ width:70%;}
+
+input#FilterHospital, select#SelectRol {
+    font-size: 1.2em;
+    padding: 1em 3%;
+    border-radius: 5px;
+    border: 0;
+    width: 94%;
+    margin: 1em auto;}
+
+    input[type="button"] {
+        width: 100%;
+        margin: 1em auto; }
+}
+

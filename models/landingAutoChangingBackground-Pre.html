@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SiSalud - Sistema informático de Salud Pre</title>
+    
+    <link rel="stylesheet" href="/styles/landingAutoChanging-Pre.css">
+    
+    <Link REL=StyleSheet HREF="/styles/tabla.css" TYPE="text/css" MEDIA=screen>
+    <link rel="stylesheet" href="/styles/jquery.auto-complete.css">
+    
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <script src="/actions/jquery-1.11.1.min.js"></script>
+    <script src="/actions/jquery.auto-complete.js"></script>
+
+
+    <script>
+
+        var nro = (new Date()).getTime();
+        
+        
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET","/models/config.xml?random="+nro,false);
+        xmlhttp.send();
+        xmlDoc=xmlhttp.responseXML;
+        
+        
+            var sitios=xmlDoc.getElementsByTagName("sitio");
+            var getperfiles=xmlDoc.getElementsByTagName("perfil");
+            var getdominio=xmlDoc.getElementsByTagName("ambiente");
+        
+        
+            var choices = [];
+            var perfiles = [];
+            var dominio = "";
+            var protocolo ="https://"
+        
+        
+        for(var i=0;i<sitios.length;i++)
+        {
+                titulo=sitios[i].getElementsByTagName("titulo")[0].childNodes[0].nodeValue
+                url=sitios[i].getElementsByTagName("url")[0].childNodes[0].nodeValue
+            url2=sitios[i].getElementsByTagName("url2")[0].childNodes[0].nodeValue
+                choices.push([titulo, url, url2]);
+        }
+        
+        
+        for(var i=0;i<getperfiles.length;i++)
+        {
+                titulo=getperfiles[i].getElementsByTagName("titulo")[0].childNodes[0].nodeValue
+                url=getperfiles[i].getElementsByTagName("url")[0].childNodes[0].nodeValue
+                pref=getperfiles[i].getElementsByTagName("pref")[0].childNodes[0].nodeValue
+                perfiles.push([titulo, url, pref]);
+        }
+        
+        for(var i=0;i<getdominio.length;i++)
+        {
+                dom=getdominio[i].getElementsByTagName("dominio")[0].childNodes[0].nodeValue
+                dominio=dom
+        
+        }
+        
+        
+        
+        </script>
+        
+        <script>
+        
+            var PrefRol="";
+        
+            function CargarSelectRol()
+        {
+        
+         for(var i=0;i<perfiles.length;i++)
+        {
+        
+            var select = perfiles[i][1]
+            var selectext = perfiles[i][0]
+            var prefijo =  perfiles[i][2]
+        
+            var miSelect2 = document.getElementById("SelectRol");
+            var aTag = document.createElement('option');
+        
+        
+            aTag.setAttribute('value',select);
+            aTag.innerHTML = selectext;
+            miSelect2.appendChild(aTag);
+        
+            if (prefijo!=="") PrefRol = prefijo;
+        
+        }
+        }
+        
+        
+        </script>
+        
+        
+        <script>
+        
+        
+                $(function(){
+        
+                    $('#FilterHospital').autoComplete({
+                        minChars: 0,
+                        source: function(term, suggest){
+                            term = term.toLowerCase();
+        
+                            var suggestions = [];
+                            for (i=0;i<choices.length;i++)
+                                if (~(choices[i][0]+' '+choices[i][1]).toLowerCase().indexOf(term)) suggestions.push(choices[i]);
+                            suggest(suggestions);
+                        },
+                        renderItem: function (item, search){
+                            search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                            var re = new RegExp("(" + search.split(' ').join('|') + ")", "gi");
+                            return '<div class="autocomplete-suggestion" data-langname="'+item[0]+'" data-lang="'+item[1]+'" data-val="'+search+'">'+item[0].replace(re, "<b>$1</b>")+'</div>';
+                        },
+                        onSelect: function(e, term, item){
+        
+                            $('#FilterHospital').val(item.data('langname'));
+                            $('#FilterHospitalHidden').val(item.data('lang'));
+        
+                        }
+                    });
+                });
+        
+        
+            </script>
+        
+         <script>
+        
+        
+        
+        
+        function setCookie(cname,cvalue,exdays) {
+        
+        
+          var d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          var expires = "expires=" + d.toGMTString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        
+        function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+        
+        function CheckCookie() {
+          var NHospital=getCookie("Hospital");
+          var NHospitalLab=getCookie("HospitalLab");
+          var Rol=getCookie("Rol");
+        
+        
+            if (Rol!=''){
+        
+            document.getElementById("SelectRol").value= Rol
+        
+        
+            }
+        
+        
+        
+          if (NHospital != '') {
+              document.getElementById("FilterHospitalHidden").value = NHospital
+              document.getElementById("FilterHospital").value = NHospitalLab
+        
+        
+          }
+        
+        
+          }
+        function SaveSelectHosp() {
+        
+          var NHospital = document.getElementById("FilterHospitalHidden").value
+          var NHospitalLab = document.getElementById("FilterHospital").value
+        
+          setCookie("Hospital", NHospital, 365);
+        
+            if (NHospitalLab!=='') {
+        
+                setCookie("HospitalLab", NHospitalLab, 365);
+        
+            }else
+        
+            {
+                var NHospitalLab=getCookie("HospitalLab");
+                document.getElementById("FilterHospital").value = NHospitalLab
+            }
+        }
+        
+        function SaveSelectRol(){
+        
+          var NRol = document.getElementById("SelectRol").value
+          setCookie("Rol", NRol, 365);
+        
+        }
+        
+        function OnMyLoad()
+             {
+                 CargarSelectRol();
+                 CheckCookie();
+             }
+        
+        function LoguinGral() {
+        
+        
+          var NHospital = document.getElementById("FilterHospitalHidden").value
+          var NHospitalLab = document.getElementById("FilterHospital").value
+          var NRol = document.getElementById("SelectRol").value
+        
+          var Roles = document.getElementById("SelectRol");
+          var RolSelected = Roles.options[Roles.selectedIndex].text;
+        
+          setCookie("Hospital", NHospital, 365);
+          setCookie("HospitalLab", NHospitalLab, 365);
+          setCookie("Rol", NRol, 365);
+        
+        if (NHospital === ''){
+        
+         for(var i=0;i<perfiles.length;i++)
+        {
+        
+            var select = perfiles[i][1]
+            var selectext = perfiles[i][0]
+            var prefijo =  perfiles[i][2]
+        
+            if (selectext===RolSelected)
+                {
+        
+        
+                if (prefijo !== "vacio"){
+                LoadPage(protocolo,prefijo,dominio,NRol);
+        
+        
+                }else{
+        
+                alert("Debe seleccionar Hospital!");
+        
+                }
+        }
+        }
+        }
+        else
+        {
+         for(var i=0;i<perfiles.length;i++)
+        {
+        
+            var select = perfiles[i][1]
+            var selectext = perfiles[i][0]
+            var prefijo =  perfiles[i][2]
+        
+            if (selectext===RolSelected)
+        {
+        
+        
+                if (prefijo !== "vacio"){
+                LoadPage(protocolo,prefijo,dominio,NRol);
+         }else{
+        
+           if(NRol!=="urlopal"){
+        
+               LoadPage(protocolo,NHospital,dominio,NRol);
+           }
+        else
+            {
+        
+        
+        for(var i=0;i<choices.length;i++)
+        {
+        
+            var url1 = choices[i][1]
+            var url2 = choices[i][2]
+        
+        
+            if (NHospital===url1)
+        {
+        
+            if(url2!=="vacio"){
+        
+             LoadPage("http://",url2,"","");
+            }
+             else {
+                 alert("El servicio de visualización de imágenes no está disponible para el hospital seleccionado");
+        
+                }
+        
+        
+        }
+        }
+        }
+        }
+        }
+        }
+        }
+        }
+        
+        
+        function LoadPage(Prot, Sitio, Dom, Rol)
+        {
+        
+          window.open(Prot+Sitio+Dom+Rol);
+        }
+    </script>
+        
+</head>
+<body  onload="OnMyLoad()" bgcolor="#E6E6FA" >
+    <div class="Section_top">
+        <div class="outer">
+            <div class="content" align="center">
+            <div class="logo">
+                <img src="/resources/logos/Blanco.png"  width="400"  align="center"/>    
+            </div>
+            <div class="divTable unstyledTable">
+                <div class="divTableBody">
+                <div class="divTableRow">
+                
+                <div class="divTableCell">
+                    <input type="Hidden" id="FilterHospitalHidden" class="form-control">
+                    <input type="text" size= "35" id="FilterHospital" class="form-control" onfocus="this.value = '';" placeholder= "Seleccione Hospital" onblur="SaveSelectHosp()" >
+                    <select id="SelectRol" class="form-control" selected=false onblur="SaveSelectRol()"></select>
+                </div>
+                
+                <!--<div class="divTableCell">
+                <form>
+                    <select id="SelectRol" class="form-control" selected=false onblur="SaveSelectRol()">
+                    </select>
+                </form>
+                </div>-->
+                
+                <div class="divTableCell">
+                <input type="button" value="Entrar" onclick="LoguinGral()">
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <div>
+        <br>
+    </div>
+    <button id="openModal">¿Necesitas Ayuda?</button>
+    <div id="modal" class="modal-container">
+        <div class="modal-content">
+            <h1>Centro de Ayuda</h1>
+            <h3>Contamos con canales de comunicacion para brindar asistencia a todo el personal de salud</h3>
+            <img src="/resources/logos/Ringer Volume.png">
+            <h2>Atencion Telefonica</h2><p>Podrás gestionar dudas o dificultades con el sistema llamando al 0800 555 4141 (int. 7100)</p>
+            <a href="https://app.slack.com/client/T01445G4MK3/C014FBSCCHE" target="_blank">
+                <img src="/resources/logos/slack.png">
+            </a>
+                <h2>Atencion Online</h2><p>En el canal de <a href="https://app.slack.com/client/T01445G4MK3/C014FBSCCHE" target="_blank">Slack</a> recibirás información en cuanto a actualizaciones de versiones y soluciones a errores.</p>
+            <div id="close" class="close">
+                <p>Cerrar</p>
+            </div>
+            <script src="modal.js"></script>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="/resources/logos/footer.png">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sitios>
+    
+<ambiente><dominio>.cba.gov.ar</dominio> </ambiente>
+
+<sitio><titulo>Hospital Abel Ayerza de Marcos Juárez</titulo><url>hospitalmarcosjuarez</url><url2>10.71.104.210/opalweb/(S(0z42oa25ca44tcwm2g3w4vhr))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Aurelio Crespo de Cruz del Eje</titulo><url>aureliocrespo</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Colonia Dr. Emilio Vidal Abal de Oliva</titulo><url>vidalabal</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Colonia de Santa María de Punilla</titulo><url>hospitalcoloniasantamaria</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Córdoba de Capital</titulo><url>cordoba</url><url2>10.204.5.10/opalweb/(S(xgiu2ouqsyimoheh5ggz2ktv))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital de Niños de la S. Trinidad de Capital</titulo><url>ninos</url><url2>10.110.5.10/opalweb/(S(uicldqljwm0kuwneyeinkzc1))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Domingo Funes de Villa Caerio</titulo><url>hospitaldomingofunes</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Dr. Ernesto Romagosa de Dean Funes</titulo><url>hospitaldeanfunes</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Dr. Luis María Bellodi de Mina Clavero</titulo><url>hospitalminaclavero</url><url2>10.71.184.243/opalweb/(S(z2yorp1v0g2md5sfzlgxarwy))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Elpidio González de Despeñaderos</titulo><url>hospitalelpidiogonzalez</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Elpidio Torres de Capital</titulo><url>elpidiotorres</url><url2>10.207.5.10/opalweb/(S(j534kt0utl1tjguj1p14tx5r))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Eva Perón de Santa Rosa de Calamuchita</titulo><url>hospitalsantarosacalamuchita</url><url2>10.71.166.210/opalweb/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Eva Perón de Capital</titulo><url>hospitalevaperon</url><url2>10.212.5.10/opalweb/(S(4zioprd0janp030f5y5tzej3))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Florencio Díaz de Capital</titulo><url>florenciodiaz</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Illia de Alta Gracia</titulo><url>illiaaltagracia</url><url2>10.71.8.200/opalweb/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Illia de La Calera</titulo><url>illiacalera</url><url2>10.103.5.10/opalweb/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Iturraspe de San Francisco</titulo><url>iturraspe</url><url2>10.71.160.100/opalweb/(S(gf2fpnaiydyk3qz1ekjkirmy))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital José J. Puente de San Francisco del Chañar</titulo><url>hospitaljjpuente</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Luis Pasteur de Villa María</titulo><url>hospitalvillamaria</url><url2>10.77.5.10//opalweb/(S(4zioprd0janp030f5y5tzej3))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Materno Neonatal Ministro Dr. Ramón Carrillo de Capital</titulo><url>neonatal</url><url2>10.103.5.10/opalweb/(S(1gswo3b0xkbvowzhc1tl1bwj))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Maternidad Provincial Bgdier. Gral. Juan B. Bustos de Capital</titulo><url>maternidad</url><url2>10.213.5.10/opalweb/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Neuropsiquiátrico de Capital</titulo><url>neuro</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Ntra. Sra. de la Misericordia de Capital</titulo><url>misericordia</url><url2>10.108.5.10/opalweb/(S(pyaaxmofjwjlfaydvizrlxok))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Nuevo San Roque de Capital</titulo><url>nuevosanroque</url><url2>10.206.5.10/opalweb/(S(mia2ycigiqpeb3rc0zqfhhux))/StudyListHome.aspx?panelToLoad=1</url2></sitio>
+<sitio><titulo>Hospital Oncológico Provincial Dr. José Miguel Urrutia de Capital</titulo><url>oncologico</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Pediátrico del Niño Jesús de Capital</titulo><url>pediatrico</url><url2>10.210.5.10/opalweb/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Pedro Vella de Corral de Bustos</titulo><url>hospitalcorraldebustos</url><url2>10.103.5.10/opalweb/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Prof. J. M. Urrutia de Unquillo</titulo><url>hospitalunquillo</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Provincial Dr. René Favaloro de Huinca Renancó</titulo><url>hospitalhuincarenanco</url><url2>10.103.5.10/opalweb/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Provincial San Antonio de La Carlota</titulo><url>hospitallacarlota</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Ramón Bautista Mestre de Santa Rosa de Río Primero</titulo><url>hospitalsantarosarioprimero</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Rawson de Capital</titulo><url>rawson</url><url2>10.209.5.10/opalweb/(S(j534kt0utl1tjguj1p14tx5r))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Regional José A. Ceballos de Bell Ville</titulo><url>hospitalbellville</url><url2>10.71.16.200/opalweb/(S(ushlomrlj2urxoxhy1gqv1tm))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Regional Ramón Cárcano de Laboulaye</titulo><url>hospitallaboulaye</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Regional de Río Tercero</titulo><url>hospitalriotercero</url><url2>10.71.159.210/opalweb/(S(xap4ku5acjuoqbshahjcl4zp))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital San Antonio de Padua de Río Cuarto</titulo><url>rioiv</url><url2>10.91.5.10/opalweb/(S(xbexk3ykvca2fnx2wjnhe2pp))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital San José de La Dormida</titulo><url>hospitalsanjosedeladormida</url><url2>10.103.5.10/opalweb/login.aspx</url2></sitio>
+<sitio><titulo>Hospital San Roque Viejo de Capital</titulo><url>hospitalsanroqueviejo</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital San Vicente de Paul Villa del Rosario</titulo><url>hospitalvilladelrosario</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Tránsito Cáceres de Allende de Capital</titulo><url>transitocaceres</url><url2>10.205.5.10/opalweb/(S(vbeel1zl0kwamftv3rgq1ipe))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Vicente Agüero de Jesús María</titulo><url>hospitaljesusmaria</url><url2>vacio</url2></sitio>
+<sitio><titulo>Hospital Regional de Villa Dolores</titulo><url>hospitalvilladolores</url><url2>10.71.184.243/opalweb/(S(z2yorp1v0g2md5sfzlgxarwy))/login.aspx</url2></sitio>
+<sitio><titulo>Hospital Zonal de Oliva</titulo><url>hospitalzonaloliva</url><url2>vacio</url2></sitio>
+<sitio><titulo>Policlínico Policial de Capital</titulo><url>policlinicopolicial</url><url2>vacio</url2></sitio>
+<sitio><titulo>IPAD Instituto Provincial de Adicciones y Drogadicción de Capital</titulo><url>ipad</url><url2>vacio</url2></sitio>
+<sitio><titulo>Laboratorio Central</titulo><url>laboratoriocentral</url><url2>vacio</url2></sitio>
+<sitio><titulo>Casa del Joven</titulo><url>casadeljoven</url><url2>vacio</url2></sitio>
+<sitio><titulo>CPA</titulo><url>cpa</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Ampliación Cabildo</titulo><url>capsampliacioncabildo</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Ampliación Ferreyra</titulo><url>capsampliacionferreyra</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Ciudad de los Cuartetos</titulo><url>capsdeloscuartetos</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Ciudad de los Niños</titulo><url>capsdelosninos</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Ciudad de Mis Sueños</titulo><url>capsmissuenos</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Ciudad Evita</titulo><url>capsevita</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Ciudad Mi Esperanza</titulo><url>capsmiesperanza</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS El Chingolo</titulo><url>capschingolo</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS General Savio</titulo><url>capsgralsavio</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Juan Pablo II</titulo><url>capsjuanpabloii</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Parque las Rosas</titulo><url>capsparquelasrosas</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Polo de la Mujer</titulo><url>capspolodelamujer</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Sol Naciente</titulo><url>capssolnaciente</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Villa Angelelli</titulo><url>capsvillaangelelli</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Villa Boedo</titulo><url>capsboedo</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Villa Retiro</titulo><url>capsvillaretiro</url><url2>vacio</url2></sitio>
+<sitio><titulo>CAPS Zepa</titulo><url>capszepa</url><url2>vacio</url2></sitio>
+
+    
+<perfil>
+        <titulo>Médico - Enfermero</titulo>
+        <url>/ehCS-ui</url>
+        <pref>vacio</pref>
+</perfil>
+<perfil>
+        <titulo>Administrativo</titulo>
+        <url>/ehHIS-ui</url>
+         <pref>vacio</pref>
+</perfil>
+<perfil>
+        <titulo>Visualizador de imágenes</titulo>
+        <url>urlopal</url>
+         <pref>vacio</pref>
+</perfil>
+<perfil>
+        <titulo>ERP</titulo>
+        <url>/ob</url>
+        <pref>gestionsalud</pref>
+</perfil>
+<perfil>
+        <titulo>Maestro Paciente (IMP)</titulo>
+        <url>/ehIMP-ui</url>
+        <pref>maestropacientes</pref>
+</perfil>
+
+
+    
+    
+</sitios>
+

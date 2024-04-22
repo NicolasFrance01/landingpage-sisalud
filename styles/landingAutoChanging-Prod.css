@@ -1,0 +1,100 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.Section_top{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image:url(1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: animate 16s infinite ease-in-out;
+}
+
+.outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(6, 226, 197, 0.5),rgb(0, 69, 130, 0.7))
+/*linear-gradient(rgba(247, 190, 43, 0.6)  ,rgba(226, 70, 76, 0.7))TEST*/
+/*(rgba(6, 226, 197, 0.5),rgb(0, 69, 130, 0.7) PRO*/
+}
+
+/*.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: #111;
+}
+.content a{
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #034e88;
+    color: #fff;
+}*/
+
+@keyframes animate{
+    0%,100%{
+        background-image:url(/resources/carousel/11.jpg);
+    }
+    20%
+    {
+        background-image:url(/resources/carousel/9.jpg);
+    }
+    40%
+    {
+        background-image:url(/resources/carousel/4.jpg);
+    }
+    60%
+    {
+        background-image:url(/resources/carousel/5.jpg);
+    }
+    80%
+    {
+        background-image:url(/resources/carousel/6.jpg);
+    }
+    100%
+    {
+        background-image:url(/resources/carousel/8.jpg);
+    }
+}
+
+.footer {
+    display: block;
+    background-size: 150px;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
